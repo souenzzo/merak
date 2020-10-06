@@ -1,0 +1,8 @@
+{:deps   true
+ :builds {:rtbl {:target           :browser
+                 :output-dir       "target/merak"
+                 :asset-path       "/merak"
+                 :modules          {:client {:entries [br.com.souenzzo.merak.client]}}
+                 :compiler-options {:source-map true}
+                 :devtools         {:preloads   [br.com.souenzzo.merak.dev-client]
+                                    :after-load br.com.souenzzo.merak.dev-client/after-load}}}}
